@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Omsakthi Wood Carving — World of Design</title>
+  <meta name="description" content="Omsakthi Wood Carving — CNC digital wood carving from Kallakurichi. Doors, panels, ACP/MDF/WPC, custom designs. International delivery."/>
+  <meta property="og:title" content="Omsakthi Wood Carving — World of Design" />
+  <meta property="og:description" content="High-quality CNC carvings and door designs from Kallakurichi, Tamil Nadu." />
+  <meta property="og:image" content="https://lh3.googleusercontent.com/d/1G8YzdByA3jOY-vOItLsGytaGft0iEkm9" />
+
+  <!-- Structured data: LocalBusiness + FAQ (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Omsakthi Wood Carving",
+    "image":"https://lh3.googleusercontent.com/d/1G8YzdByA3jOY-vOItLsGytaGft0iEkm9",
+    "url":"https://www.omsakthiwoodcarving.com",
+    "telephone":"+919787122929",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Kallakurichi",
+      "addressLocality":"Kallakurichi",
+      "addressRegion":"Tamil Nadu",
+      "postalCode":"606202",
+      "addressCountry":"IN"
+    },
+    "openingHours":"Mo-Sa 09:00-18:30"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How long does a custom door take?","acceptedAnswer":{"@type":"Answer","text":"Typically 7–14 days depending on complexity and finish."}},
+    {"@type":"Question","name":"Do you ship internationally?","acceptedAnswer":{"@type":"Answer","text":"Yes — we provide shipping to the US, UK, Maldives, Canada, Mauritius and more. Please request a quote for shipping costs."}},
+    {"@type":"Question","name":"Which materials do you work with?","acceptedAnswer":{"@type":"Answer","text":"We work with ACP, MDF, WPC, solid wood and composite panels."}}
+  ]}
+  </script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent:#bf1f18; --accent-2:#ffd95a; --muted:#555; --bg:#fffaf0;
+      --glass: rgba(255,255,255,0.6);
+      --radius:14px; --maxW:1150px;
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:var(--bg);color:#111;line-height:1.45;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    a{color:inherit}
+    .container{max-width:var(--maxW);width:100%;margin:0 auto;padding:18px}
+
+    header{position:sticky;top:0;z-index:999;background:rgba(255,255,255,0.98);backdrop-filter: blur(6px);box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:12px 20px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:60px;height:60px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#ff7b6b);display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:22px;box-shadow:0 8px 24px rgba(191,31,24,0.14)}
+    .brand-title{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--accent);font-weight:800;letter-spacing:0.3px} /* slightly larger as requested */
+    nav{display:flex;gap:14px;align-items:center}
+    nav a{padding:10px 12px;border-radius:10px;text-decoration:none;color:rgba(0,0,0,0.75);font-weight:700}
+    nav a:hover{background:rgba(0,0,0,0.04);}
+
+    /* HERO */
+    .hero-outer{margin-top:16px;position:relative;overflow:hidden;border-radius:16px;box-shadow:0 14px 40px rgba(0,0,0,0.08)}
+    .hero-carousel{display:flex;transition:transform .6s cubic-bezier(.22,.9,.28,1);will-change:transform;touch-action:pan-y}
+    .hero-slide{min-width:100%;height:66vh;background-size:cover;background-position:center 32%;position:relative;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+    .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.06));pointer-events:none}
+    .hero-content{position:relative;z-index:2;padding:28px;text-align:center;color:#fff;max-width:980px;pointer-events:auto}
+    .hero-title{
+      font-family:'Playfair Display',serif;
+      font-size:3.25rem;
+      margin:0;
+      line-height:1;
+      letter-spacing:0.6px;
+      -webkit-text-stroke: 0.5px rgba(0,0,0,0.22);
+      background: linear-gradient(90deg,#fff 0%, #fff 40%, var(--accent-2) 100%);
+      -webkit-background-clip:text;background-clip:text;color:transparent;
+      text-shadow:0 16px 36px rgba(0,0,0,0.28);
+    }
+    .hero-sub{margin-top:10px;font-size:1.02rem;color:rgba(255,255,255,0.95)}
+
+    .hero-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:5;background:rgba(0,0,0,0.36);border-radius:50%;width:44px;height:44px;display:flex;align-items:center;justify-content:center;color:#fff;cursor:pointer}
+    .hero-arrow.left{left:12px}
+    .hero-arrow.right{right:12px}
+    .hero-dots{position:absolute;left:50%;transform:translateX(-50%);bottom:12px;display:flex;gap:8px;z-index:5}
+    .hero-dot{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,0.6);cursor:pointer}
+    .hero-dot.active{background:var(--accent-2)}
+
+    /* Sections */
+    .section{margin-top:28px}
+    .section h2{margin:0 0 12px;font-size:1.25rem;color:#111}
+
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .service{background:white;padding:14px;border-radius:10px;box-shadow:0 6px 16px rgba(0,0,0,0.04)}
+
+    /* Product slider: ensure 4 visible on wide screens and no empty gap */
+    .product-slider{position:relative;margin-top:8px;overflow:hidden;padding:6px;border-radius:12px}
+    .slider-track{display:flex;gap:12px;transition:transform .45s;will-change:transform;touch-action:pan-y}
+    /* show 4 cards on >=1000px: each card 22% to leave gaps */
+    .product-card{min-width:22%;max-width:22%;background:#fff;border-radius:12px;padding:12px;box-shadow:0 12px 30px rgba(0,0,0,0.06);flex-shrink:0;display:flex;flex-direction:column;align-items:center;transition:transform .22s}
+    .product-card:hover{transform:translateY(-6px)}
+    .product-card img{width:100%;height:160px;object-fit:cover;border-radius:10px}
+    .product-caption{margin-top:10px;font-weight:700;color:#222;text-align:center;font-size:0.95rem}
+    .slider-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:4;background:linear-gradient(180deg,rgba(255,255,255,0.95),rgba(245,245,245,0.9));width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 8px 20px rgba(0,0,0,0.08)}
+    .slider-arrow.left{left:6px}
+    .slider-arrow.right{right:6px}
+
+    /* Testimonials (new) */
+    .testimonials { margin-top:26px; display:flex; flex-direction:column; gap:12px; }
+    .test-grid { display:flex; gap:12px; flex-wrap:wrap; }
+    .test-card { background:#fff; padding:14px; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.06); flex:1 1 280px; min-width:220px; }
+    .stars { color:#f5b106; font-weight:800; margin-bottom:8px; }
+    .quote { color:var(--muted); font-size:0.98rem; margin-top:6px; }
+
+    /* Contact + Quote equal height */
+    .contact-row { display:flex; gap:20px; flex-wrap:wrap; align-items:stretch; }
+    .contact-col { flex:1 1 460px; min-width:300px; display:flex; flex-direction:column; }
+    .contact-card.big { padding:20px; border-radius:12px; background:linear-gradient(180deg, rgba(255,255,255,0.96), #ffffff); box-shadow:0 18px 40px rgba(0,0,0,0.06); display:flex; flex-direction:column; justify-content:space-between; }
+    .contact-card.big > .content { flex: 0 0 auto; }
+    .contact-card.big .bottom { margin-top:12px; flex: 0 0 auto; }
+    .contact-card.big form.quote-form { flex:1 1 auto; display:flex; flex-direction:column; gap:12px; }
+    .contact-card.big form .quote-cta { margin-top:auto; }
+
+    .contact-head { font-size:1.45rem; font-weight:900; color:var(--accent); margin-bottom:10px; } /* BIG contact heading as requested */
+    .large-head { display:flex; align-items:center; gap:12px; font-size:1.12rem; font-weight:800; color:#111; margin-bottom:12px; }
+    .ci { width:44px; height:44px; display:inline-flex; align-items:center; justify-content:center; border-radius:10px; background:#f6f7f8; box-shadow:0 8px 20px rgba(0,0,0,0.05); }
+    .contact-line { display:flex; align-items:center; gap:12px; font-size:1.05rem; font-weight:700; color:#0b3b2e; }
+    .contact-meta { color:var(--muted); font-size:0.98rem; margin-top:6px; }
+
+    /* inline map */
+    .map-wrap { margin-top:12px; border-radius:10px; overflow:hidden; border:1px solid #eee; height:220px; }
+    .map-wrap iframe { width:100%; height:100%; border:0; display:block; }
+
+    .quote-form input, .quote-form textarea { padding:12px; font-size:1rem; border-radius:10px; border:1px solid #e7e7e7; width:100%; background:#fff; }
+    .btn-large { background:#0a7a49; color:white; padding:12px 18px; border-radius:10px; border:0; font-weight:800; font-size:1rem; cursor:pointer; box-shadow:0 10px 28px rgba(10,122,73,0.12); }
+    .btn-secondary { background:transparent; border:2px solid #0a7a49; color:#0a7a49; padding:10px 14px; border-radius:8px; font-weight:700; cursor:pointer; }
+
+    /* Country list: enlarge emoji/sticker size */
+    .country-list { list-style:none; padding:0; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:10px; max-width:880px; font-family:"Poppins",sans-serif; font-size:1.02rem; line-height:1.8; }
+    .country-list li { display:flex; align-items:center; gap:12px; background:#f8f9fa; padding:10px 14px; border-radius:8px; box-shadow:0 1px 3px rgba(0,0,0,0.08); }
+    .country-list img { width:28px; height:20px; border-radius:3px; }
+    .country-emoji { font-size:1.25rem; } /* emoji slightly bigger */
+
+    /* Floating WhatsApp */
+    .whatsapp-fab{position:fixed;right:18px;bottom:18px;background:#25D366;color:white;border-radius:50%;width:56px;height:56px;display:flex;align-items:center;justify-content:center;z-index:9999;box-shadow:0 18px 48px rgba(0,0,0,0.22);cursor:pointer}
+
+    footer{margin-top:36px;padding:18px;text-align:center;color:#fff;background:linear-gradient(90deg,var(--accent),#ff7b6b);border-radius:12px}
+
+    /* Responsive */
+    @media(max-width:1100px){
+      .product-card{min-width:31%;max-width:31%}
+    }
+    @media(max-width:760px){
+      .product-card{min-width:46%;max-width:46%}
+      .hero-title{font-size:2.1rem}
+      .map-wrap{height:220px}
+    }
+    @media(max-width:480px){
+      .product-card{min-width:90%;max-width:90%}
+      .hero-title{font-size:1.6rem}
+    }
+
+    a:focus, button:focus { outline:3px solid rgba(11,96,183,0.18); outline-offset:2px; }
+    html{scroll-behavior:smooth}
+    @media (max-width: 480px) {
+  .container, .product-card, .card, .item, body, html {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+  }
+  .slider-track {
+    gap: 6px !important;  /* Reduce slider/card gap for small screens */
+  }
+}
+.nav-menu {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+/* Add this for mobile screens */
+@media (max-width: 600px) {
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 16px;
+  }
+  .nav-menu a {
+    width: 100%;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+    font-size: 1.1em;
+  }
+}
+  
+/* === Added fixes for header/title, hero and product slider on mobile === */
+
+/* Keep brand title on a single line and center on small screens */
+.brand-title { white-space: nowrap; }
+
+/* Make hero span full viewport width (negate container padding) */
+.hero-outer { margin-left: calc(-1 * ( (100% - min(var(--maxW), 100%)) / 2 )); margin-right: calc(-1 * ( (100% - min(var(--maxW), 100%)) / 2 )); width: calc(100% + ( (100% - min(var(--maxW), 100%)) )); }
+
+/* Ensure each slide occupies entire viewport width on small screens */
+@media (max-width: 760px) {
+  .hero-slide { min-width: 100vw !important; width: 100vw !important; height: 52vh; background-position: center 32% !important; }
+  .hero-outer { border-radius: 12px; overflow: hidden; }
+  /* reduce arrows overlap and keep hero full width */
+  .hero-arrow.left { left: 8px; }
+  .hero-arrow.right { right: 8px; }
+}
+
+/* Product slider: avoid partial slide cut-offs - show full card on small screens */
+@media (max-width: 480px) {
+  .product-card{min-width:100% !important; max-width:100% !important;}
+  .product-slider { padding: 0 8px; }
+  .slider-track { gap: 8px !important; }
+}
+
+/* Make header title responsive and centered visually */
+@media (max-width: 480px) {
+  .brand-title { font-size: 1.25rem !important; text-align: center; display: block; }
+  header .header-inner { flex-direction: column; align-items: flex-start; gap:6px; padding-bottom:8px; }
+  .nav-menu { margin-top:8px; padding-left:0; }
+}
+
+/* Reduce any unexpected horizontal overflow */
+html, body { overflow-x: hidden; }
+
+
+/* === Small fixes added by assistant === */
+/* Prevent contact phone links from wrapping onto two lines */
+.contact-line a { white-space: nowrap; display: inline-block; }
+.contact-line { flex-wrap: nowrap; gap: 18px; }
+/* Ensure brand title stays on one line on small screens */
+.brand-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+html, body { overflow-x: hidden; }
+
+</style>
+</head>
+<body>
+  <div class="container">
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">ஓம்</div>
+      <div>
+        <div class="brand-title">Omsakthi Wood Carving</div>
+        <div style="font-size:0.9rem;color:var(--muted)">Kallakurichi, India</div>
+      </div>
+    </div>
+  </div>
+  <nav class="nav-menu">
+    <a href="services">Services</a>
+    <a href="products">Works</a>
+    <a href="delivery">Delivery</a>
+    <a href="contact">Contact</a>
+  </nav>
+</header>
+
+ 
+
+    <!-- HERO -->
+    <section class="hero-outer" aria-label="Hero">
+      <div id="carousel" class="hero-carousel" role="list" aria-live="polite">
+        <div class="hero-slide" role="listitem" style="background-image:url('https://lh3.googleusercontent.com/d/1G8YzdByA3jOY-vOItLsGytaGft0iEkm9')">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <h1 id="heroTitle" class="hero-title">Omsakthi Wood Carving</h1>
+            <div class="hero-sub">World of Design — CNC digital wood carving & custom doors</div>
+          </div>
+        </div>
+
+        <div class="hero-slide" role="listitem" style="background-image:url('https://lh3.googleusercontent.com/d/1Imi1TumjaanCkDvNCJLkphJL3d4UvStv')">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <h1 class="hero-title">Handcrafted Precision</h1>
+            <div class="hero-sub">High-precision CNC carving with beautiful finishes</div>
+          </div>
+        </div>
+
+        <div class="hero-slide" role="listitem" style="background-image:url('https://lh3.googleusercontent.com/d/1JkhLTaAkqWxoNzhgp7UKNMxMqznBzf17')">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <h1 class="hero-title">Doors & Panels</h1>
+            <div class="hero-sub">Premium carved doors and decorative panels</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-arrow left" id="heroPrev" aria-label="Previous slide">‹</div>
+      <div class="hero-arrow right" id="heroNext" aria-label="Next slide">›</div>
+
+      <div class="hero-dots" id="heroDots" aria-label="Hero navigation"></div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <h2 id="services-title">SERVICES</h2>
+      <div class="services">
+        <div class="service"><strong>CNC Carving</strong><div style="color:var(--muted);margin-top:6px">High precision carving for doors, panels and decorative work.</div></div>
+        <div class="service"><strong>Door Designs</strong><div style="color:var(--muted);margin-top:6px">MDF, WPC, solid wood door carving and finishing.</div></div>
+        <div class="service"><strong>ACP / MDF / WPC</strong><div style="color:var(--muted);margin-top:6px">Architectural panels and interior cladding.</div></div>
+        <div class="service"><strong>Custom Projects</strong><div style="color:var(--muted);margin-top:6px">Tailored design to suit your home or business.</div></div>
+      </div>
+    </section>
+
+    <!-- Our works (product slider) -->
+    <section class="section" id="products" aria-labelledby="products">
+      <h2 id="products-title">OUR DESIGN WORKS</h2>
+      <p style="color:var(--muted)">Swipe or click arrows to browse projects. Tap an image to open a larger view.</p>
+
+      <div class="product-slider" id="productSlider" aria-hidden="false">
+        <div class="slider-arrow left" id="prodPrev" aria-label="Previous">‹</div>
+        <div class="slider-arrow right" id="prodNext" aria-label="Next">›</div>
+
+        <div class="slider-track" id="sliderTrack" role="list">
+          <!-- 4 visible on desktop now; images lazy-loaded -->
+          <div class="product-card" role="listitem">
+            <img src="https://lh3.googleusercontent.com/d/1Imi1TumjaanCkDvNCJLkphJL3d4UvStv" alt="Elegant carved door" loading="lazy">
+            <div class="product-caption">Elegant carved door</div>
+          </div>
+
+          <div class="product-card" role="listitem">
+            <img src="https://lh3.googleusercontent.com/d/1JkhLTaAkqWxoNzhgp7UKNMxMqznBzf17" alt="Decorative wall panel" loading="lazy">
+            <div class="product-caption">Decorative wall panel</div>
+          </div>
+
+          <div class="product-card" role="listitem">
+            <img src="https://lh3.googleusercontent.com/d/1EIdVvGjVcRR-xJMeYMwM6O7j9hTIm807" alt="Intricate carving example" loading="lazy">
+            <div class="product-caption">Intricate carving</div>
+          </div>
+
+          <div class="product-card" role="listitem">
+            <img src="https://lh3.googleusercontent.com/d/1k5UjSyNWXcfUsCSUj5PbD9czHjvv3Ajk" alt="Finished door installation" loading="lazy">
+            <div class="product-caption">Finished installation</div>
+          </div>
+
+          <!-- additional cards (slider scrolls naturally) -->
+          <div class="product-card" role="listitem">
+            <img src="https://lh3.googleusercontent.com/d/1bpdqzgeaytll2ObGhs1-LSIoSuKpLZEY" alt="Custom panel sample" loading="lazy">
+            <div class="product-caption">Custom panel sample</div>
+          </div>
+
+          <div class="product-card" role="listitem">
+            <img src="https://lh3.googleusercontent.com/d/1FxXvv1tX61omnoT0XUZjX5v5_hIqVv_W" alt="Architectural cladding" loading="lazy">
+            <div class="product-caption">Architectural cladding</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials (new) -->
+    <section class="section" id="testimonials" aria-labelledby="testimonials-title">
+      <h2 id="testimonials-title">What customers say</h2>
+      <div class="testimonials">
+        <div class="test-grid">
+          <div class="test-card">
+            <div class="stars">★★★★★</div>
+            <strong>Excellent craftsmanship</strong>
+            <div class="quote">"Beautiful door carving and timely delivery. Highly recommended!" — S. Kumar</div>
+          </div>
+          <div class="test-card">
+            <div class="stars">★★★★★</div>
+            <strong>Perfect finish</strong>
+            <div class="quote">"Great finish and accurate dimensions. Very professional." — A. Ramesh</div>
+          </div>
+          <div class="test-card">
+            <div class="stars">★★★★★</div>
+            <strong>International shipping</strong>
+            <div class="quote">"They shipped to Maldives — packaging was excellent." — L. Mohamed</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Delivery -->
+    <section class="section" id="delivery" aria-labelledby="delivery-title">
+      <h2 id="delivery-title">INTERNATIONAL DELIVERY🌍</h2>
+      <p style="color:var(--muted)">We deliver internationally to many countries — examples below:</p>
+
+      <ul class="country-list" aria-label="List of delivery countries and codes">
+        <li><img src="https://flagcdn.com/24x18/us.png" alt="US"> <span class="country-emoji">🇺🇸</span> United States — +1</li>
+        <li><img src="https://flagcdn.com/24x18/gb.png" alt="UK"> <span class="country-emoji">🇬🇧</span> United Kingdom — +44</li>
+        <li><img src="https://flagcdn.com/24x18/mv.png" alt="Maldives"> <span class="country-emoji">🇲🇻</span> Maldives — +960</li>
+        <li><img src="https://flagcdn.com/24x18/ca.png" alt="Canada"> <span class="country-emoji">🇨🇦</span> Canada — +1</li>
+        <li><img src="https://flagcdn.com/24x18/mu.png" alt="Mauritius"> <span class="country-emoji">🇲🇺</span> Mauritius — +230</li>
+        <li><img src="https://flagcdn.com/24x18/au.png" alt="Australia"> <span class="country-emoji">🇦🇺</span> Australia — +61</li>
+        <li><img src="https://flagcdn.com/24x18/in.png" alt="India"> <span class="country-emoji">🇮🇳</span> India — +91</li>
+        <li>🌍 <strong>And many more worldwide</strong></li>
+      </ul>
+    </section>
+
+    <!-- Contact (equal height and inline map) -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title" style="font-size:1.45rem;">CONTACT & LOCATION</h2>
+
+      <div class="contact-row" role="group" aria-label="Contact and request quoting">
+        <!-- LEFT: Contact info with inline map -->
+        <div class="contact-col">
+          <div class="contact-card big" role="region" aria-label="Contact information">
+            <div class="content">
+              <div class="contact-head">Contact</div>
+
+              <p class="contact-line" style="margin-top:6px;">
+                <a href="tel:+919787122929">📞 +91 97871 22929</a> &nbsp; &nbsp;
+                <a href="tel:+919444302929">📞 +91 94443 02929</a>
+              </p>
+
+              <p class="contact-meta">Available on Call & WhatsApp </p>
+
+              <p class="contact-line" style="margin-top:12px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#D44638" style="margin-right:8px" xmlns="http://www.w3.org/2000/svg"><path d="M12 13.065L2.4 6.6V18h19.2V6.6L12 13.065zM12 11.47L21.6 5.1H2.4L12 11.47z"/></svg>
+                <a href="mailto:omsakthiwoodcarving@gmail.com">omsakthiwoodcarving@gmail.com</a>
+              </p>
+
+              <p class="contact-line" style="margin-top:12px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#0b60b7" style="margin-right:8px" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.14 2 5 5.14 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.86-3.14-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
+                Kallakurichi, Tamil Nadu — PIN 606202 &nbsp;
+                <a href="https://maps.app.goo.gl/rdMqgpt1y7XKmMZr5" target="_blank" rel="noopener" style="font-weight:700;margin-left:8px;color:var(--accent)">Open in Maps</a>
+              </p>
+
+              <div class="socials-large" style="margin-top:14px;">
+                <a href="https://www.facebook.com/Omsakthicaving" target="_blank" rel="noopener" aria-label="Facebook">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="#1877F2" xmlns="http://www.w3.org/2000/svg"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S1.86 6.48 1.86 12.07c0 4.97 3.63 9.08 8.37 9.88v-6.99H8.05v-2.89h2.18V9.41c0-2.16 1.28-3.34 3.24-3.34.94 0 1.92.17 1.92.17v2.11h-1.08c-1.06 0-1.39.66-1.39 1.33v1.61h2.36l-.38 2.89h-1.98v6.99c4.74-.79 8.37-4.91 8.37-9.88z"/></svg>
+                  <span style="font-size:0.95rem">Facebook</span>
+                </a>
+
+                <a href="https://t.me/+919787122929" target="_blank" rel="noopener" aria-label="Telegram">
+                  <svg width="18" height="18" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg"><path fill="#0088cc" d="M120 0C53.7 0 0 53.7 0 120s53.7 120 120 120 120-53.7 120-120S186.3 0 120 0zm56.8 83.1l-19.1 90.4c-1.4 6.6-5.1 8.3-10.3 5.2l-28.6-21.1-13.8 13.3c-1.5 1.5-2.8 2.8-5.7 2.8l2-28.2 51.4-46.4c2.2-2 0.1-3.2-3.4-1.2L79 128.9 40.7 119.5c-6.1-1.9-6.2-6.1 1.3-9.1L176.5 77.1c5.2-1.6 9.8 1.7 8.3 6z"/></svg>
+                  <span style="font-size:0.95rem">Telegram</span>
+                </a>
+
+                <a href="mailto:omsakthiwoodcarving@gmail.com" aria-label="Email">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="#D44638" xmlns="http://www.w3.org/2000/svg"><path d="M12 13.065L2.4 6.6V18h19.2V6.6L12 13.065zM12 11.47L21.6 5.1H2.4L12 11.47z"/></svg>
+                  <span style="font-size:0.95rem">Email</span>
+                </a>
+              </div>
+
+              <!-- inline map -->
+              <div class="map-wrap" aria-hidden="false" title="Map of Kallakurichi">
+                <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                  src="https://maps.google.com/maps?q=Kallakurichi%20Tamil%20Nadu%20606202&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+              </div>
+            </div>
+
+            <div class="bottom" style="margin-top:12px; display:flex; gap:10px; align-items:center;">
+              <div style="font-size:0.95rem;color:var(--muted)">Quick Links:</div>
+              <a href="#delivery" style="color:var(--accent); font-weight:700">Delivery</a>
+              <a href="#products" style="color:var(--accent); font-weight:700">Our Works</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Request a Quote -->
+        <div class="contact-col">
+          <div class="contact-card big" role="region" aria-label="Request a quote">
+            <div class="content">
+              <div class="large-head">
+                <span class="ci" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="#0a7a49" xmlns="http://www.w3.org/2000/svg"><path d="M3 5a2 2 0 012-2h6v2H5v14h14v-6h2v6a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"/><path d="M21 3h-6v2h3.59L12 11.59 13.41 13 20 6.41V10h2V3z"/></svg>
+                </span>
+                <span>Request a Quote</span>
+              </div>
+
+              <p style="margin:0 0 12px; color:var(--muted); font-size:0.98rem;">
+                Tell us about your design (materials, sizes, qty). Attach reference photos by replying to our email or WhatsApp.
+              </p>
+
+              <form name="contact" method="POST" data-netlify="true" id="quoteForm" onsubmit="return handleSubmit(event)" netlify class="quote-form" aria-label="Request quote form">
+                <input type="hidden" name="form-name" value="contact">
+                <label for="qName" style="font-weight:700">Name *</label>
+                <input id="qName" name="name" required placeholder="Your name">
+
+                <label for="qEmail" style="font-weight:700">Email *</label>
+                <input id="qEmail" name="email" type="email" required placeholder="you@example.com">
+
+                <label for="qPhone" style="font-weight:700">Phone</label>
+                <input id="qPhone" name="phone" placeholder="+91 9XXXX XXXXX">
+
+                <label for="qMsg" style="font-weight:700">Project details *</label>
+                <textarea id="qMsg" name="message" rows="5" required placeholder="Tell us about materials, sizes, reference images..."></textarea>
+
+                <div class="quote-cta">
+                  <button type="submit" class="btn-large">Send Request</button>
+                  <a href="mailto:omsakthiwoodcarving@gmail.com?subject=Quick%20Quote" class="btn-secondary">Email directly</a>
+                  <small style="color:var(--muted); margin-left:auto;">Saved to Netlify Forms when deployed</small>
+                </div>
+              </form>
+            </div>
+
+            <div class="bottom" style="margin-top:12px;color:var(--muted);font-size:0.95rem;">
+              We usually reply within 24 hours. For a faster reply, message on WhatsApp.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div style="color:white">© <span id="year"></span> Omsakthi Wood Carving — Kallakurichi</div>
+        <div style="display:flex;gap:12px;align-items:center">
+          <a href="https://maps.app.goo.gl/rdMqgpt1y7XKmMZr5" target="_blank" rel="noopener" style="color:white;text-decoration:underline">View on Google Maps</a>
+          <a href="https://www.facebook.com/Omsakthicaving" target="_blank" rel="noopener" style="color:white">Facebook</a>
+          <a href="https://t.me/+919787122929" target="_blank" rel="noopener" style="color:white">Telegram</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- WhatsApp floating -->
+  <a class="whatsapp-fab" href="https://wa.me/919787122929?text=Hello%20Omsakthi%20Wood%20Carving%2C%20I%20would%20like%20a%20quote" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M20.52 3.48A11.886 11.886 0 0012 0C5.373 0 0 5.373 0 12c0 2.116.556 4.075 1.519 5.792L0 24l6.49-1.67A11.885 11.885 0 0012 24c6.627 0 12-5.373 12-12 0-3.197-1.245-6.167-3.48-8.52zM12 21.7a9.7 9.7 0 01-5.097-1.39l-.366-.22-3.86.99.998-3.763-.238-.378A9.7 9.7 0 1121.7 12 9.71 9.71 0 0112 21.7z"/><path d="M17.1 14.8c-.3-.15-1.78-.88-2.06-.98-.28-.1-.48-.15-.68.15-.18.27-.7.98-.86 1.18-.16.2-.33.22-.62.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.74-1.64-2.04-.17-.3.02-.46.13-.6.12-.12.28-.3.42-.45.14-.15.18-.25.3-.42.12-.18.05-.33-.02-.47-.07-.14-.68-1.64-.93-2.24-.25-.58-.5-.5-.68-.51-.18-.01-.39-.01-.6-.01s-.47.07-.72.39c-.25.32-1 1-1 2.4 0 1.4 1.03 2.76 1.18 2.95.15.2 2.03 3.1 4.92 4.34 2.68 1.14 2.68.76 3.17.71.49-.04 1.58-.64 1.8-1.26.22-.62.22-1.15.15-1.26-.07-.12-.27-.18-.57-.33z"/></svg>
+  </a>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    /* HERO CAROUSEL */
+    (function(){
+      const carousel = document.getElementById('carousel');
+      const slides = Array.from(carousel.children);
+      const total = slides.length;
+      let index = 0;
+      let timer = null;
+      const dotsContainer = document.getElementById('heroDots');
+
+      for(let i=0;i<total;i++){
+        const d = document.createElement('button');
+        d.className = 'hero-dot' + (i===0? ' active':'');
+        d.dataset.index = i;
+        d.addEventListener('click', ()=>{ goTo(i); resetTimer(); });
+        dotsContainer.appendChild(d);
+      }
+      const dots = Array.from(dotsContainer.children);
+
+      function goTo(i){
+        index = (i + total) % total;
+        carousel.style.transform = `translateX(${ -index * 100 }vw)`;
+        dots.forEach((dot,di)=>dot.classList.toggle('active', di===index));
+      }
+
+      function next(){ goTo(index+1); }
+      function prev(){ goTo(index-1); }
+
+      document.getElementById('heroPrev').addEventListener('click', ()=>{ prev(); resetTimer(); });
+      document.getElementById('heroNext').addEventListener('click', ()=>{ next(); resetTimer(); });
+
+      function startTimer(){ if(!timer) timer = setInterval(next, 5200); }
+      function stopTimer(){ if(timer){ clearInterval(timer); timer=null; } }
+      function resetTimer(){ stopTimer(); startTimer();
+
+// ensure each slide is exactly the carousel width, and keep transform aligned
+function sizeSlides(){
+  slides.forEach(s => { s.style.width = carousel.offsetWidth + 'px'; });
+  carousel.style.transform = 'translateX(' + (-index * carousel.offsetWidth) + 'px)';
+}
+// call on init and on resize/orientation change
+sizeSlides();
+window.addEventListener('resize', sizeSlides, {passive:true});
+window.addEventListener('orientationchange', sizeSlides, {passive:true});
+ }
+
+      let startX=0, dx=0, touching=false;
+      carousel.addEventListener('touchstart', e=>{ touching=true; startX=e.touches[0].clientX; stopTimer(); }, {passive:true});
+      carousel.addEventListener('touchmove', e=>{ if(!touching) return; dx = e.touches[0].clientX - startX; }, {passive:true});
+      carousel.addEventListener('touchend', e=>{ touching=false; if(Math.abs(dx)>60){ if(dx>0) prev(); else next(); } dx=0; resetTimer(); }, {passive:true});
+      document.querySelector('.hero-outer').addEventListener('mouseenter', stopTimer);
+      document.querySelector('.hero-outer').addEventListener('mouseleave', resetTimer);
+      startTimer();
+
+      slides.forEach(sl=>{
+        sl.addEventListener('click', ()=> {
+          const bg = sl.style.backgroundImage;
+          const url = bg.replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
+          const caption = sl.querySelector('.hero-sub')?.textContent || 'Omsakthi';
+          openLightbox(url, caption);
+        });
+      });
+
+      // Parallax small adjust to keep face visible
+      window.addEventListener('scroll', ()=>{
+        const rect = document.querySelector('.hero-outer').getBoundingClientRect();
+        const offset = Math.max(-rect.top, 0) / Math.max(window.innerHeight,1);
+        Array.from(document.querySelectorAll('.hero-slide')).forEach(sl=>{
+          const base = 32;
+          const pos = Math.max(8, Math.min(60, base - offset*8));
+          sl.style.backgroundPosition = `center ${pos}%`;
+        });
+      }, {passive:true});
+    })();
+
+    /* PRODUCT SLIDER — improved behavior to avoid empty gap */
+    (function(){
+      const track = document.getElementById('sliderTrack');
+      const cards = Array.from(track.children);
+      const prev = document.getElementById('prodPrev');
+      const next = document.getElementById('prodNext');
+      let position = 0;
+
+      
+function cardWidth(){
+  const style = getComputedStyle(cards[0]);
+  const gap = parseInt(getComputedStyle(track).gap) || 12;
+  return Math.round(cards[0].getBoundingClientRect().width + gap);
+}
+
+
+      next.addEventListener('click', ()=>{
+        const visible = Math.floor(document.getElementById('productSlider').offsetWidth / cardWidth());
+        position = Math.min(position + Math.max(1,visible), Math.max(0, cards.length - visible));
+        track.style.transform = `translateX(-${position * cardWidth()}px)`;
+      });
+      prev.addEventListener('click', ()=>{
+        const visible = Math.floor(document.getElementById('productSlider').offsetWidth / cardWidth());
+        position = Math.max(0, position - Math.max(1,visible));
+        track.style.transform = `translateX(-${position * cardWidth()}px)`;
+      });
+
+      // click to open lightbox with caption
+      document.querySelectorAll('.product-card img').forEach((img)=>{
+        img.addEventListener('click', ()=> openLightbox(img.src, img.alt) );
+      });
+
+      // touch swipe
+      let startX=0, touching=false;
+      track.addEventListener('touchstart', e=>{ touching=true; startX=e.touches[0].clientX; }, {passive:true});
+      track.addEventListener('touchmove', e=>{ if(!touching) return; const dx = e.touches[0].clientX - startX; track.style.transform = `translateX(${ -position * cardWidth() + dx }px)`; }, {passive:true});
+      track.addEventListener('touchend', e=>{ touching=false; const dx = e.changedTouches[0].clientX - startX; if(Math.abs(dx) > 50){ if(dx < 0) next.click(); else prev.click(); } else track.style.transform = `translateX(-${position * cardWidth()}px)`; }, {passive:true});
+
+      window.addEventListener('resize', ()=>{ track.style.transform = `translateX(-${position * cardWidth()}px)`; });
+    })();
+
+    /* LIGHTBOX */
+    function openLightbox(src, caption){
+      const overlay = document.createElement('div');
+      overlay.style.position='fixed';overlay.style.inset=0;overlay.style.background='rgba(0,0,0,0.92)';
+      overlay.style.display='flex';overlay.style.flexDirection='column';overlay.style.alignItems='center';overlay.style.justifyContent='center';
+      overlay.style.zIndex=99999; overlay.style.cursor='zoom-out';
+      const img = document.createElement('img'); img.src=src; img.alt=caption||'Image';
+      img.style.maxWidth='92%'; img.style.maxHeight='82%'; img.style.borderRadius='8px';
+      const cap = document.createElement('div'); cap.textContent = caption; cap.style.color='white'; cap.style.marginTop='12px'; cap.style.fontSize='1rem';
+      overlay.appendChild(img); overlay.appendChild(cap);
+      overlay.addEventListener('click', ()=> document.body.removeChild(overlay));
+      document.body.appendChild(overlay);
+    }
+
+    /* FORM handler: Netlify + mailto fallback */
+    function handleSubmit(e){
+      e.preventDefault();
+      const form = e.target;
+      const name = (form.querySelector('[name="name"]') || {}).value || '';
+      const email = (form.querySelector('[name="email"]') || {}).value || '';
+      const phone = (form.querySelector('[name="phone"]') || {}).value || '';
+      const message = (form.querySelector('[name="message"]') || {}).value || '';
+      if(!name || !email || !message){ alert('Please fill required fields.'); return false; }
+      const subject = encodeURIComponent('Quote request from ' + name);
+      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\n\nMessage:\n' + message);
+      // Netlify captures POST if deployed; open mail client as immediate fallback:
+      window.location.href = `mailto:omsakthiwoodcarving@gmail.com?subject=${subject}&body=${body}`;
+      return true;
+    }
+  </script>
+</body>
+</html>
